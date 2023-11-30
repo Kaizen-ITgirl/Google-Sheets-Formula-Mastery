@@ -1,5 +1,4 @@
 # Google-Sheets-Formula-Mastery
-Google Sheets/Excel Formulas
 **Welcome to FormulaMastery**
 About This Repository
 FormulaMastery is a curated collection of meticulously crafted Google Sheets formulas designed to simplify your work and enhance data manipulation. Each formula is a product of my own experience, born out of hours of research, thoughtful consideration, and a deep understanding of the intricacies involved.
