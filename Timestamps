@@ -1,0 +1,16 @@
+
+In our operational workflow, where adherence to timelines is paramount, I've devised a formula to automatically extract and catalog the entry timestamps of data. This formula functions by systematically capturing the precise moment data is entered in our spreadsheet.
+So the formula is;
+=IFS(Production!B828="","",B5="",NOW(),TRUE,B5)
+
+Your formula is designed to calculate the time difference between the extracted timestamp (in cell D5) and a predefined checkpoint time of 10:30 AM on the same date. Let me break down the components of your formula:
+
+DATE(YEAR(D5), MONTH(D5), DAY(D5)): Extracts the date from the timestamp in cell D5.
+
+TIME(10,30,0): Represents the fixed checkpoint time of 10:30 AM.
+
++: Adds the extracted date and the fixed checkpoint time, creating a combined date-time value.
+
+- D5: Subtracts the original timestamp in cell D5 from the combined date-time value, resulting in the time difference.
+
+This formula essentially computes the time gap between the actual data entry timestamp and the predetermined checkpoint time of 10:30 AM on the same day.
